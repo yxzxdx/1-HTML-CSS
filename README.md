@@ -1,3 +1,3 @@
 # 1-HTML-CSS
 
-TEST
+Pertemuan pertama NWDC, membahas tentang  HTML dan CSS dengan cara praktik langsung membuat profile page sederhana.
