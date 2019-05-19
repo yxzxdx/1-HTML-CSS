@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.85rem;
+  background: #2b5876;  /* fallback for old browsers uigradient.com/seablue*/
+  background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .virgil-profile {
   margin-top: 5%;
   margin-left: auto;
@@ -5,6 +15,7 @@
   margin-bottom: 10%;
   width: 65%;
   height: 500px;
+  box-shadow: 10px 10px  rgb(0, 0, 0);
 }
 
 .profile-picture {
@@ -46,15 +57,31 @@
 
 .profile-bio img {
   width: 7.5%;
+  transition: all .5s
 }
 
-@media screen and (max-width: 898px) {
+.profile-bio img:hover {
+  width: 10%;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  color: #54ade9;
+}
+
+
+@media screen and (max-width: 932px) {
+
   .profile-bio h1 {
-    font-size: 33px;
+    font-size: 28px;
   }
 
   .profile-bio p {
-    font-size: 0.95em;
+    font-size: 0.90em;
   }
 
   .profile-bio img {
@@ -63,13 +90,19 @@
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 766px) {
+  .virgil-profile {
+    box-shadow: none;
+  }
+} 
+
+@media screen and (max-width: 415px) {
   .profile-bio h1 {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .profile-bio p {
-    font-size: 0.90em;
+    font-size: 0.80em;
   }
 }
 
